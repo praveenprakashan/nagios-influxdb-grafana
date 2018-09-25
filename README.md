@@ -28,6 +28,10 @@
 
 - Nagios : http://\<IP Address\>/nagios/   - Default user : nagiosadmin   Password: nagiosadmin
 - Grafana : http://\<IP Address\>:3000     - Default user : admin password: admin
+
+![Alt text](nagios-screenshot.PNG?raw=true "Nagios")
+![Alt text](grafana-screenshot.PNG?raw=true "Grafana")
+
   
 # Reference
 https://support.nagios.com/kb/article/nagios-core-performance-graphs-using-influxdb-nagflux-grafana-histou-802.html
