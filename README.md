@@ -35,4 +35,5 @@
   
 # Reference
 https://support.nagios.com/kb/article/nagios-core-performance-graphs-using-influxdb-nagflux-grafana-histou-802.html
-
+http://docs.grafana.org/installation/docker/
+https://docs.influxdata.com/influxdb/v1.6/introduction/installation/
