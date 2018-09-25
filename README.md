@@ -30,7 +30,7 @@
 - Grafana : http://\<IP Address\>:3000     - Default user : admin password: admin
 
 ![Alt text](nagios-screenshot.PNG?raw=true "Nagios")
-![Alt text](grafana-screenshot.PNG  width=100)
+![](grafana-screenshot.PNG  =100x50)
 
   
 # Reference
