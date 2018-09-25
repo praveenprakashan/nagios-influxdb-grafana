@@ -1,0 +1,35 @@
+[main]
+    NagiosSpoolfileFolder = "/usr/local/nagios/var/spool/nagfluxperfdata"
+    NagiosSpoolfileWorker = 1
+    InfluxWorker = 2
+    MaxInfluxWorker = 5
+    DumpFile = "nagflux.dump"
+    NagfluxSpoolfileFolder = "/usr/local/nagios/var/nagflux"
+    FieldSeparator = "&"
+    BufferSize = 10000
+    FileBufferSize = 65536
+    DefaultTarget = "all"
+
+[Log]
+    LogFile = "/usr/local/nagios/var/nagflux.log"
+    MinSeverity = "INFO"
+
+[InfluxDBGlobal]
+    CreateDatabaseIfNotExists = true
+    NastyString = ""
+    NastyStringToReplace = ""
+    HostcheckAlias = "hostcheck"
+
+[InfluxDB "nagflux"]
+    Enabled = true
+    Version = 1.0
+    Address = "http://127.0.0.1:8086"
+    Arguments = "precision=ms&u=root&p=root&db=nagflux"
+    StopPullingDataIfDown = true
+
+[InfluxDB "fast"]
+    Enabled = false
+    Version = 1.0
+    Address = "http://127.0.0.1:8086"
+    Arguments = "precision=ms&u=root&p=root&db=fast"
+    StopPullingDataIfDown = false
