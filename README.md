@@ -1,6 +1,6 @@
 
 # nagios-influxdb-grafana
-- Building Docker image for Nagios core 4.4.2
+- Building Docker image for Nagios core 4.4.2 on centos:latest
 - Also running InfluxDB and Grafana for performance graph
 - Grafana integrated into Nagios Core Interface  
 
